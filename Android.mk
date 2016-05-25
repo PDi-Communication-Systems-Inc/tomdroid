@@ -11,7 +11,7 @@ LOCAL_CERTIFICATE := platform
 LOCAL_JAVA_LIBRARIES := signpost-commons-http \
                         signpost-core \
 		        diffutils \
-			android.test.runner
+			android-test
 
 include $(BUILD_PACKAGE)
 
@@ -19,6 +19,7 @@ include $(CLEAR_VARS)
 
 LOCAL_STATIC_JAVA_LIBRARIES := signpost-commons-http:libs/signpost-commonshttp4-1.2.1.2.jar \
                                signpost-core:libs/signpost-core-1.2.1.2.jar \
-                               diffutils:libs/diffutils-1.2.1.jar
+                               diffutils:libs/diffutils-1.2.1.jar \
+			       android-test:libs/android-test-4.1.1.4.jar
 
 include $(BUILD_MULTI_PREBUILT)
